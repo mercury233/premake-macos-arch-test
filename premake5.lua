@@ -19,6 +19,11 @@ workspace "testWorkspace"
         print("  Target OS: " .. os.target())
         print("  Target arch: " .. (os.targetarch() or "nil"))
         print("  _TARGET_ARCH: " .. (_TARGET_ARCH or "nil"))
+        filter "architecture:arm*"
+            print("  ARM architecture detected by architecture:arm*")
+        filter "not architecture:arm*"
+            print("  NON-ARM architecture detected by not architecture:arm*")
+        filter {}
         print("---")
 
     project "test_arm64"
@@ -33,6 +38,11 @@ workspace "testWorkspace"
         print("  Target OS: " .. os.target())
         print("  Target arch: " .. (os.targetarch() or "nil"))
         print("  _TARGET_ARCH: " .. (_TARGET_ARCH or "nil"))
+        filter "architecture:arm*"
+            print("  ARM architecture detected by architecture:arm*")
+        filter "not architecture:arm*"
+            print("  NON-ARM architecture detected by not architecture:arm*")
+        filter {}
         print("---")
 
     project "test_universal"
@@ -47,6 +57,11 @@ workspace "testWorkspace"
         print("  Target OS: " .. os.target())
         print("  Target arch: " .. (os.targetarch() or "nil"))
         print("  _TARGET_ARCH: " .. (_TARGET_ARCH or "nil"))
+        filter "architecture:arm*"
+            print("  ARM architecture detected by architecture:arm*")
+        filter "not architecture:arm*"
+            print("  NON-ARM architecture detected by not architecture:arm*")
+        filter {}
         print("---")
     
     project "test_universal_with_buildoptions"
@@ -63,6 +78,11 @@ workspace "testWorkspace"
         print("  Target OS: " .. os.target())
         print("  Target arch: " .. (os.targetarch() or "nil"))
         print("  _TARGET_ARCH: " .. (_TARGET_ARCH or "nil"))
+        filter "architecture:arm*"
+            print("  ARM architecture detected by architecture:arm*")
+        filter "not architecture:arm*"
+            print("  NON-ARM architecture detected by not architecture:arm*")
+        filter {}
         print("---")
 
     project "test_buildoptions"
@@ -78,4 +98,9 @@ workspace "testWorkspace"
         print("  Target OS: " .. os.target())
         print("  Target arch: " .. (os.targetarch() or "nil"))
         print("  _TARGET_ARCH: " .. (_TARGET_ARCH or "nil"))
+        filter "architecture:arm*"
+            print("  ARM architecture detected by architecture:arm*")
+        filter "not architecture:arm*"
+            print("  NON-ARM architecture detected by not architecture:arm*")
+        filter {}
         print("---")
