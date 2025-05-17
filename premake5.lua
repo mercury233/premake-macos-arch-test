@@ -25,6 +25,9 @@ workspace "testWorkspace"
         filter "not architecture:arm*"
             --print("  NON-ARM architecture detected by not architecture:arm*")
             targetsuffix "_nonarm"
+        filter "architecture:universal"
+            --print("  universal architecture detected by architecture:universal")
+            targetsuffix "_universal"
         filter {}
         print("---")
 
@@ -46,6 +49,9 @@ workspace "testWorkspace"
         filter "not architecture:arm*"
             --print("  NON-ARM architecture detected by not architecture:arm*")
             targetsuffix "_nonarm"
+        filter "architecture:universal"
+            --print("  universal architecture detected by architecture:universal")
+            targetsuffix "_universal"
         filter {}
         print("---")
 
@@ -67,6 +73,9 @@ workspace "testWorkspace"
         filter "not architecture:arm*"
             --print("  NON-ARM architecture detected by not architecture:arm*")
             targetsuffix "_nonarm"
+        filter "architecture:universal"
+            --print("  universal architecture detected by architecture:universal")
+            targetsuffix "_universal"
         filter {}
         print("---")
     
@@ -90,6 +99,9 @@ workspace "testWorkspace"
         filter "not architecture:arm*"
             --print("  NON-ARM architecture detected by not architecture:arm*")
             targetsuffix "_nonarm"
+        filter "architecture:universal"
+            --print("  universal architecture detected by architecture:universal")
+            targetsuffix "_universal"
         filter {}
         print("---")
 
@@ -112,5 +124,8 @@ workspace "testWorkspace"
         filter "not architecture:arm*"
             --print("  NON-ARM architecture detected by not architecture:arm*")
             targetsuffix "_nonarm"
+        filter "architecture:universal"
+            --print("  universal architecture detected by architecture:universal")
+            targetsuffix "_universal"
         filter {}
         print("---")
