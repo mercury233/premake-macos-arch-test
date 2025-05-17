@@ -20,9 +20,11 @@ workspace "testWorkspace"
         print("  Target arch: " .. (os.targetarch() or "nil"))
         print("  _TARGET_ARCH: " .. (_TARGET_ARCH or "nil"))
         filter "architecture:arm*"
-            print("  ARM architecture detected by architecture:arm*")
+            --print("  ARM architecture detected by architecture:arm*")
+            targetsuffix "_arm"
         filter "not architecture:arm*"
-            print("  NON-ARM architecture detected by not architecture:arm*")
+            --print("  NON-ARM architecture detected by not architecture:arm*")
+            targetsuffix "_nonarm"
         filter {}
         print("---")
 
@@ -39,9 +41,11 @@ workspace "testWorkspace"
         print("  Target arch: " .. (os.targetarch() or "nil"))
         print("  _TARGET_ARCH: " .. (_TARGET_ARCH or "nil"))
         filter "architecture:arm*"
-            print("  ARM architecture detected by architecture:arm*")
+            --print("  ARM architecture detected by architecture:arm*")
+            targetsuffix "_arm"
         filter "not architecture:arm*"
-            print("  NON-ARM architecture detected by not architecture:arm*")
+            --print("  NON-ARM architecture detected by not architecture:arm*")
+            targetsuffix "_nonarm"
         filter {}
         print("---")
 
@@ -58,9 +62,11 @@ workspace "testWorkspace"
         print("  Target arch: " .. (os.targetarch() or "nil"))
         print("  _TARGET_ARCH: " .. (_TARGET_ARCH or "nil"))
         filter "architecture:arm*"
-            print("  ARM architecture detected by architecture:arm*")
+            --print("  ARM architecture detected by architecture:arm*")
+            targetsuffix "_arm"
         filter "not architecture:arm*"
-            print("  NON-ARM architecture detected by not architecture:arm*")
+            --print("  NON-ARM architecture detected by not architecture:arm*")
+            targetsuffix "_nonarm"
         filter {}
         print("---")
     
@@ -79,9 +85,11 @@ workspace "testWorkspace"
         print("  Target arch: " .. (os.targetarch() or "nil"))
         print("  _TARGET_ARCH: " .. (_TARGET_ARCH or "nil"))
         filter "architecture:arm*"
-            print("  ARM architecture detected by architecture:arm*")
+            --print("  ARM architecture detected by architecture:arm*")
+            targetsuffix "_arm"
         filter "not architecture:arm*"
-            print("  NON-ARM architecture detected by not architecture:arm*")
+            --print("  NON-ARM architecture detected by not architecture:arm*")
+            targetsuffix "_nonarm"
         filter {}
         print("---")
 
@@ -99,8 +107,10 @@ workspace "testWorkspace"
         print("  Target arch: " .. (os.targetarch() or "nil"))
         print("  _TARGET_ARCH: " .. (_TARGET_ARCH or "nil"))
         filter "architecture:arm*"
-            print("  ARM architecture detected by architecture:arm*")
+            --print("  ARM architecture detected by architecture:arm*")
+            targetsuffix "_arm"
         filter "not architecture:arm*"
-            print("  NON-ARM architecture detected by not architecture:arm*")
+            --print("  NON-ARM architecture detected by not architecture:arm*")
+            targetsuffix "_nonarm"
         filter {}
         print("---")

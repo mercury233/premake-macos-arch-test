@@ -49,7 +49,11 @@ jobs:
       run: |
         make
 
-    - name: Test architectures
+    - name: List files
+      run: |
+        ls -la ./bin/release
+
+    - name: Test architectures (maybe not working)
       run: |
         lipo -archs ./bin/release/test_x64
         lipo -archs ./bin/release/test_arm64
